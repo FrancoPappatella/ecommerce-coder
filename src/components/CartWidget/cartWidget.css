@@ -1,0 +1,14 @@
+#nav-icon-container{
+    display:flex;
+}
+#bag-icon{
+    margin-right: 8px;
+    font-size: 30px;
+}
+#product-quantity{
+    font-size: 15px;
+    background-color: #773344;
+    color: white;
+    width: 25px;
+    border-radius: 100px;
+}
