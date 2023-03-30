@@ -9,7 +9,7 @@ function App() {
 
   const styles = {
     color: 'green',
-    fontSize: '150px'
+    fontSize: '130px'
   }
   return (
     <div className='App'>
