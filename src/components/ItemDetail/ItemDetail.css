@@ -1,0 +1,46 @@
+#detail-container {
+  display: inline flex;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  font-size: 20px;
+}
+
+.item-img {
+  height: 500px;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+#item-description {
+  font-size: 15px;
+  text-align: center;
+}
+
+#item-count {
+  display: block;
+  margin: 0 auto;
+}
+
+.item-price {
+  font-size: 35px;
+  text-align: center;
+}
+
+#count-container{
+  display: flex;
+  justify-content: center;
+}
+
+#button-container {
+  display:  flex;
+  justify-content: center;
+}
+
+.btn{
+  margin: 10px;
+}

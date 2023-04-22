@@ -1,0 +1,11 @@
+.pika{
+    display: flex;
+    justify-content: center;
+}
+.pika h3{
+    margin: 0 10px;
+}
+#btn-container{
+    display: flex;
+    justify-content: center;
+}

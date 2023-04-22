@@ -1,0 +1,16 @@
+#item-count-container {
+  display: flex;
+  margin: 0 auto;
+}
+
+h4 {
+  text-align: center;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-container button {
+  margin: 0 10px;
+}

@@ -1,40 +1,41 @@
 import React from "react";
 import "./navBar.css";
 import { CartWidget } from "../CartWidget/CartWidget";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
-    <nav id="nav-bar" class="navbar navbar-expand-lg">
-      <ul id="nav-items-list" class="navbar-nav">
-        <li class="nav-item">
-          <a href="#" class="nav-link">
+    <nav id="nav-bar" className="navbar navbar-expand-lg">
+      <ul id="nav-items-list" className="navbar-nav">
+        <li className="nav-item">
+          <Link to="/" className="nav-link">
             Coffee Style
-          </a>
+          </Link>
         </li>
-        <li class="nav-item active">
-          <a href="#" class="nav-link">
+        <li className="nav-item">
+          <Link to="/"  className="nav-link">
             Inicio
-          </a>
+          </Link>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            Producto
-          </a>
+        <li className="nav-item">
+          <Link to="/productos/" className="nav-link">
+            Productos
+          </Link>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
+        <li className="nav-item">
+          <Link to="/contacto/" className="nav-link">
             Contacto
-          </a>
+          </Link>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
+        <li className="nav-item">
+          <Link to="/nosotros/" className="nav-link">
             Sobre nosotros
-          </a>
+          </Link>
         </li>
-        <li class="nav-item" id="cart-container">
-          <a href="#" class="nav-link">
+        <li className="nav-item" id="cart-container">
+          <Link to="/cart" className="nav-link">
             <CartWidget />
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
