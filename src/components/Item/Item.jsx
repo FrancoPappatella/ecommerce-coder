@@ -6,12 +6,14 @@ export const Item = ({ id, description, image, price }) => {
   console.log(id, description, image, price);
   return (
     <div id="item-container">
-        <p id="item-description">{description}</p>
+        <h2 id="item-description">{description}</h2>
         <img src={image} id="item-img" />
         <h5 id="item-price">${price}</h5>
         <div className="btn-container">
           <Link to={`/detail/${id}`}>
+            <center>
           <button className="btn btn-primary">Lo quiero</button>
+            </center>
           </Link>
         </div>
     </div>

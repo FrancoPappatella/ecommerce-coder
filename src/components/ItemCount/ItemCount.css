@@ -1,16 +1,16 @@
-#item-count-container {
-  display: flex;
-  margin: 0 auto;
+button{
+  margin: 0 5px;
+}
+#item-count-container,
+.btn-container {
+  margin: 10px 5px;
 }
 
 h4 {
   text-align: center;
 }
-.btn-container {
+#btn-container{
   display: flex;
   justify-content: center;
 }
 
-.btn-container button {
-  margin: 0 10px;
-}

@@ -17,6 +17,7 @@ import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetail
 import { CategoriaList } from "./components/CategoriaList/CategoriaList";
 import { ContactoScreen } from "./components/ContactoScreen/ContactoScreen";
 import { NosotrosScreen } from "./components/NosotrosScreen/NosotrosScreen";
+import { Checkout } from "./components/Checkout/Checkout";
 
 function App() {
   return (
@@ -29,9 +30,10 @@ function App() {
             <Route path="/" element={<ItemListContainer />} />
             <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
             <Route path="/productos/" element={<ItemListContainer />} />
-            <Route path="/categoria/:categoriaId" element={<CategoriaList />} />
+            <Route path="/categoria/:categoriaId" element={<ItemListContainer />} />
             <Route path="/nosotros/" element={<NosotrosScreen/>} />
             <Route path="/contacto/" element={<ContactoScreen/>} />
+            <Route path="/checkout/" element={<Checkout/>} />
           </Routes>
         </Router>
 

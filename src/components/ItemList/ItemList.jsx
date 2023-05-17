@@ -6,7 +6,7 @@ import {CategoriaListContainer} from "../CategoriaListContainer/CategoriaListCon
 export const ItemList = ({ productos = [] }) => {
   return (
     <div className="item-list-container">
-      <CategoriaListContainer/>
+      {/*<CategoriaListContainer/>*/}
       {productos.map((item) => (
         <Item {...item} key={item.id}/>
       ))}

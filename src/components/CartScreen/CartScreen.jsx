@@ -5,7 +5,7 @@ import "../CartScreen/CartScreen.css";
 import { Link } from "react-router-dom";
 
 export const CartScreen = () => {
-  const { precioTotal, removerItem, carrito, vaciarCarrito } =
+  const { precioTotal, removerItem, carrito, vaciarCarrito} =
     useContext(CartContext);
   return (
     <div id="listado">
@@ -22,9 +22,9 @@ export const CartScreen = () => {
                 <h3>Resumen de compras</h3>
                 <hr />
                 <div className="cart-product-container">
-                  <p>Producto</p>
-                  <p>$</p>
-                  <p>Cantidad: </p>
+                  <p>{prod.description}</p>
+                  <p>${prod.price}</p>
+                  <p>Cantidad: {prod.counter} </p>
                   <button
                     className="btn btn-danger"
                     onClick={() => removerItem(prod.id)}
@@ -34,10 +34,13 @@ export const CartScreen = () => {
                 </div>
               </div>
             ))}
-            <strong>Precio total: {precioTotal}</strong>
+            <strong>Precio total: ${precioTotal()}</strong>
             <button className="btn btn-danger" onClick={() => vaciarCarrito()}>
               Vaciar carrito
             </button>
+            <Link className="btn btn-success" to="/checkout/">
+              Terminar compra
+            </Link>
           </>
         )
         /*

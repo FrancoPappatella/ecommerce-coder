@@ -35,7 +35,7 @@ export const CategoriaList = () => {
         <h1>CARGANDO...</h1>
       ) : (
         <div id="filtered-products">
-          <CategoriaListContainer />
+         { /*<CategoriaListContainer />*/ }
           {items.map((item) => (
             <Item {...item} key={item.id} />
           ))}

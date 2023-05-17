@@ -13,23 +13,23 @@ export const NavBar = () => {
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/"  className="nav-link">
-            Inicio
-          </Link>
-        </li>
-        <li className="nav-item">
           <Link to="/productos/" className="nav-link">
             Productos
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/contacto/" className="nav-link">
-            Contacto
+          <Link to={`/categoria/${'1'}`} className="nav-link">
+            Café
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/nosotros/" className="nav-link">
-            Sobre nosotros
+          <Link to={`/categoria/${'2'}`} className="nav-link">
+            Tazas
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to={`/categoria/${'3'}`} className="nav-link">
+            Molinos
           </Link>
         </li>
         <li className="nav-item" id="cart-container">
